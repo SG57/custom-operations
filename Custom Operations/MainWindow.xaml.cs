@@ -108,9 +108,16 @@ internal partial class MainWindow
                             new()
                             {
                                 Index = 1
-                                , Name = "Google"
+                                , Name = "Copy Machine name"
+                                , Type = OperationType.CopyToClipboard
+                                , Arguments = "machine-01-0662-lt.sg57productions.com"
+                            }
+                            , new()
+                            {
+                                Index = 2
+                                , Name = "Open Google.com"
                                 , Type = OperationType.StartProcess
-                                , Arguments = "https://www.google.com"
+                                , Arguments = new[] { "https://www.google.com" }
                             }
                         }
                     }
