@@ -71,6 +71,7 @@
 
     <DockPanel>
         <Label
+            x:Name="OperationsLabel"
             HorizontalContentAlignment="Center"
             DockPanel.Dock="Top"
             MouseLeftButtonUp="Control_OnMouseDoubleClick"

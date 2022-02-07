@@ -21,6 +21,8 @@ internal partial class MainWindow
         InitializeComponent();
         DataContext = this;
 
+        OperationsLabel.ToolTip = OperationItem.EditConfig.Arguments?.ToString();
+
         Configuration = LoadConfiguration();
 
         for (var index = 1; index <= 9; index++)
